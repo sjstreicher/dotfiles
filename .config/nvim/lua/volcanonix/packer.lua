@@ -45,4 +45,10 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+  use('mfussenegger/nvim-dap')
+  -- use('mfussenegger/nvim-dap-python')
+  use('rcarriga/nvim-dap-ui')
+  use('theHamsta/nvim-dap-virtual-text')
+  use('nvim-telescope/telescope-dap.nvim')
+  -- use {'jayp0521/mason-nvim-dap.nvim', after = 'mason.nvim'}
 end)
