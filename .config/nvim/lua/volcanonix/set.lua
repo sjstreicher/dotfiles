@@ -29,3 +29,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "88"
+
+vim.g.netrw_winsize = 30
+vim.g.netrw_banner = 0
