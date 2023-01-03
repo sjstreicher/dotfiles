@@ -2,7 +2,7 @@
 #export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/volcanonix/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,11 +106,11 @@ export NVM_DIR="$HOME/.nvm"
 
 # not needed as covered by ~/.profile
 # stripe cli
-#path+=('/home/volcanonix/bin')
+#path+=('/home/$USER/bin')
 #export PATH
 
 # poetry
-#path+=('/home/volcanonix/.local/bin')
+#path+=('/home/$USER/.local/bin')
 #export PATH
 
 # stripe autocompletion
@@ -141,5 +141,6 @@ setopt globdots
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 # Julia
-export PATH="$PATH:/home/volcanonix/julia-1.8.1/bin"
+export PATH="$PATH:/home/$USER/julia-1.8.1/bin"
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

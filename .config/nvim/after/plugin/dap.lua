@@ -2,7 +2,7 @@ local dap = require("dap")
 
 dap.adapters.python = {
 	type = "executable",
-	command = "/home/volcanonix/.virtualenvs/debugpy/bin/python",
+	command = os.getenv("HOME") .. "/.virtualenvs/debugpy/bin/python",
 	args = { "-m", "debugpy.adapter" },
 }
 
