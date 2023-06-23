@@ -114,7 +114,7 @@ export NVM_DIR="$HOME/.nvm"
 #export PATH
 
 # stripe autocompletion
-fpath=(~/.stripe $fpath)
+#fpath=(~/.stripe $fpath)
 autoload -Uz compinit && compinit -i
 
 # Case insensitive match
